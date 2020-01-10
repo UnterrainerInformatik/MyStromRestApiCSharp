@@ -1,7 +1,11 @@
 language: csharp
-solution: MyStromRestApiCSharp.sln
+solution: $SOLUTION_NAME.sln
+git:
+  depth: false
 install:
-  - nuget restore MyStromRestApiCSharp.sln
+  - msbuild /t:Restore $SOLUTION_NAME.sln
+script:
+  - msbuild /p:Configuration=Release $SOLUTION_NAME.sln
 deploy:
   skip_cleanup: true
   provider: script
