@@ -4,9 +4,10 @@ git:
   depth: false
 install:
   - nuget restore $SOLUTION_NAME.sln
+before_script:
+  - export PATH=$PATH:/home/travis/.dotnet/tools
 script:
   - dotnet tool install --global minver-cli --version 2.0.0
-  - export PATH="$PATH:/home/travis/.dotnet/tools"1
   - export VERSION=$(minver)
   - echo $VERSION
   - msbuild /p:Configuration=Release /p:VersionNumber=$VERSION $SOLUTION_NAME.sln
