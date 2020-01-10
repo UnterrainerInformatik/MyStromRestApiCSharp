@@ -3,7 +3,7 @@ solution: $SOLUTION_NAME.sln
 git:
   depth: false
 install:
-  - msbuild /t:Restore $SOLUTION_NAME.sln
+  - nuget restore $SOLUTION_NAME.sln
 script:
   - msbuild /p:Configuration=Release $SOLUTION_NAME.sln
 deploy:
