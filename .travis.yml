@@ -2,3 +2,9 @@ language: csharp
 solution: MyStromRestApiCSharp.sln
 install:
   - nuget restore MyStromRestApiCSharp.sln
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: chmod +x ./deploy.sh && ./deploy.sh $NUGET_API_KEY
+  on:
+    branch: master
