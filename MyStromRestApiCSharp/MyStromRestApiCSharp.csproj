@@ -76,13 +76,14 @@
     <Compile Include="Devices\MyStromDevice.cs" />
     <Compile Include="Devices\MyStromSwitch.cs" />
     <Compile Include="MyStromUtil.cs" />
-    <Compile Include="NUnitTests\BulbTests.cs" />
-    <Compile Include="NUnitTests\SwitchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MyStromRestApiCSharp.nuspec" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NUnitTests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
