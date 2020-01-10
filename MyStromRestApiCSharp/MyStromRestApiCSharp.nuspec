@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<package>
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<title>$title$</title>
+		<authors>Unterrainer Informatik OG Team</authors>
+		<owners>Public Domain</owners>
+		<licenseUrl>http://unlicense.org</licenseUrl>
+		<projectUrl>https://github.com/UnterrainerInformatik/MyStromRestApiCSharp</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>
+			This repository contains objects for the various MyStrom appliances you can buy everywhere.
+			The special thing about those appliances is that they each contain a small web-server sporting a REST API.
+			So you're not bound to some quirky wireless protocol you need a special dongle for, or such awful stuff. Just
+			use standard HTTP calls. That's all.
+
+			The contained device-objects can connect to such a device and send the right commands in order to, for example, turn
+			a lamp on or off, as well as periodically query status information, so you may query it at leisure.
+			Currently only the MyStrom-Switch and the MyStrom-Bulb-EU are implemented as well as device-lookup and all the
+			general stuff. But feel free to request add-ons or just make a pull-request on the repository on GitHub.
+			See the REST API documentation here: https://api.mystrom.ch/?version=latest
+		</description>
+		<summary>
+			An implementation of the MyStrom REST API in C#. It handles the HTTP- and JSON-conversion-stuff for you.
+		</summary>
+		<releaseNotes></releaseNotes>
+		<copyright>Copyright 2020</copyright>
+		<language>en-US</language>
+		<tags>MyStrom switch bulb REST API HTTP JSON</tags>
+	</metadata>
+</package>
