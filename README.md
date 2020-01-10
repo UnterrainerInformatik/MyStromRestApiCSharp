@@ -3,10 +3,6 @@
 
 # General
 
-https://travis-ci.org/UnterrainerInformatik/MyStromRestApiCSharp.svg?branch=master
-
-
-
 This section contains various useful projects that should help your development-process.  
 
 This section of our GIT repositories is free. You may copy, use or rewrite every single one of its contained projects to your hearts content.  
