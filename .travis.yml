@@ -1,2 +1,4 @@
 language: csharp
 solution: MyStromRestApiCSharp.sln
+install:
+  - nuget restore MyStromRestApiCSharp.sln

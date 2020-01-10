@@ -1,7 +1,11 @@
-[![NuGet](https://img.shields.io/nuget/v/MyStromRestApiCSharp.svg)](https://www.nuget.org/packages/MyStromRestApiCSharp/) [![NuGet](https://img.shields.io/nuget/dt/MyStromRestApiCSharp.svg)](https://www.nuget.org/packages/MyStromRestApiCSharp/)
+[![NuGet](https://img.shields.io/nuget/v/MyStromRestApiCSharp.svg)](https://www.nuget.org/packages/MyStromRestApiCSharp/) [![NuGet](https://img.shields.io/nuget/dt/MyStromRestApiCSharp.svg)](https://www.nuget.org/packages/MyStromRestApiCSharp/) [![Build Status](https://travis-ci.org/UnterrainerInformatik/MyStromRestApiCSharp.svg?branch=master)](https://travis-ci.org/UnterrainerInformatik/MyStromRestApiCSharp)
  [![license](https://img.shields.io/github/license/unterrainerinformatik/MyStromRestApiCSharp.svg?maxAge=2592000)](http://unlicense.org)  [![Twitter Follow](https://img.shields.io/twitter/follow/throbax.svg?style=social&label=Follow&maxAge=2592000)](https://twitter.com/throbax)  
 
 # General
+
+https://travis-ci.org/UnterrainerInformatik/MyStromRestApiCSharp.svg?branch=master
+
+
 
 This section contains various useful projects that should help your development-process.  
 
