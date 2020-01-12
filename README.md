@@ -59,7 +59,7 @@ public void ToggleTest()
 [Test]
 public void ScannedWifisDetailedTest()
 {
-    var b = new MyStromSwitch("Testswitch", 192.168.0.124", "93fnafh4o9f8h943rh");
+    var b = new MyStromSwitch("Testswitch", "192.168.0.124", "93fnafh4o9f8h943rh");
 
     var r = b.ScanForWifisDetailed();
 
