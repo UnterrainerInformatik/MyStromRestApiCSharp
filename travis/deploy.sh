@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ApiKey=$1
 SolutionName=$2
 Version=$3
