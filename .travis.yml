@@ -10,13 +10,12 @@ script:
   - chmod +x ./travis/*
   - ./travis/inst_netcoresdk.sh
   - ./travis/inst_minver.sh
-  - export VERSION=$(minver)
-  - echo $VERSION
+  - source ./travis/set_minver_version.sh
   - msbuild /p:Configuration=Release /p:VersionNumber=$VERSION $SOLUTION_NAME.sln
 deploy:
   skip_cleanup: true
   provider: script
   script: 
-    - ./travis/deploy.sh $NUGET_API_KEY $SOLUTION_NAME $VERSION
+    - ./travis/deploy.sh "$NUGET_API_KEY" "Release" "$PROJECT_FILENAME" "$PROJECT_PATH" "$VERSION"
   on:
     branch: master
