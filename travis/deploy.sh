@@ -7,4 +7,4 @@ ProjectPath=$4
 Version=$5
 
 nuget pack ${ProjectPath}${ProjectFileName}.csproj -Version $Version -Verbosity detailed -Symbols -SymbolPackageFormat snupkg -Prop Configuration=$Config
-nuget push ./$ProjectName.*.nupkg -Verbosity detailed -ApiKey $ApiKey -source https://www.nuget.org
+nuget push ./$ProjectFileName.*.nupkg -Verbosity detailed -ApiKey $ApiKey -source https://www.nuget.org
