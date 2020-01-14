@@ -10,7 +10,7 @@ script:
   - chmod +x ./travis/*
   - ./travis/inst_netcoresdk.sh
   - ./travis/inst_minver.sh
-  - source ./travis/set_minver_version.sh
+  - source travis/set_minver_version.sh
   - msbuild /p:Configuration=Release /p:VersionNumber=$VERSION $SOLUTION_NAME.sln
 deploy:
   skip_cleanup: true
